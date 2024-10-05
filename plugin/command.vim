@@ -48,3 +48,5 @@ endfunction
 
 " json format
 command! -range JSONFormat <line1>,<line2>!python -m json.tool
+
+command! TrimWhitespace %s/\s\+$\|^\n\%$//e

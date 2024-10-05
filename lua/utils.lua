@@ -79,14 +79,4 @@ function M.is_compatible_version(expected_version)
   return true
 end
 
-function M.trim()
-  local save = fn.winsaveview()
-  vim.cmd("keeppatterns %s/\\s\\+$\\|\\r$//e")
-  fn.winrestview(save)
-end
-
-vim.api.nvim_create_user_command('TrimWhitespace', function()
-  require('utils').trim()  
-end, {})
-
 return M

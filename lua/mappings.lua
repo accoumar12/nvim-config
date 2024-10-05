@@ -1,9 +1,6 @@
 local keymap = vim.keymap
 local uv = vim.uv
 
--- Save key strokes (now we do not need to press shift to enter command mode).
-keymap.set({ "n", "x" }, ";", ":")
-
 -- Turn the word under cursor to upper case
 keymap.set("i", "<c-u>", "<Esc>viwUea")
 
@@ -184,6 +181,7 @@ keymap.set({ "x", "o" }, "iu", "<cmd>call text_obj#URL()<cr>", { desc = "URL tex
 
 -- Text objects for entire buffer
 keymap.set({ "x", "o" }, "iB", ":<C-U>call text_obj#Buffer()<cr>", { desc = "buffer text object" })
+
 
 -- Do not move my cursor when joining lines.
 keymap.set("n", "J", function()
