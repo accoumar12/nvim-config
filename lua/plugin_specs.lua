@@ -443,6 +443,32 @@ local plugin_specs = {
     ft = { "tmux" },
   },
 
+
+  {
+  "christoomey/vim-tmux-navigator",
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateDown",
+      "TmuxNavigateUp",
+      "TmuxNavigateRight",
+      "TmuxNavigatePrevious",
+    },
+    keys = {
+      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
+      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
+      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
+      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
+      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+    },
+    enabled = function()
+      if utils.executable("tmux") then
+        return true
+      end
+      return false
+    end,
+    ft = { "tmux" },
+  },
+
   -- Modern matchit implementation
   { "andymass/vim-matchup", event = "BufRead" },
   { "tpope/vim-scriptease", cmd = { "Scriptnames", "Messages", "Verbose" } },

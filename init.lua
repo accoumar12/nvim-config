@@ -25,3 +25,6 @@ require("mappings")
 vim.cmd("source ".. vim.fs.joinpath(config_dir, "viml_conf/plugins.vim"))
 -- colorscheme settings
 require("colorschemes")
+
+-- Keeps the cursor in the center of the screen
+vim.o.scrolloff = 999

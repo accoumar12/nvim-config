@@ -79,6 +79,7 @@
   "vim-snippets": { "branch": "master", "commit": "f0a3184d9f90b96b044d5914625a25c554d7f301" },
   "vim-swap": { "branch": "master", "commit": "9358bfdc5e377aa13e7c2c2dd8699ba32b0dcf83" },
   "vim-tmux": { "branch": "master", "commit": "cfe76281efc29890548cf9eedd42ad51c7a1faf0" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "a9b52e7d36114d40350099f254b5f299a35df978" },
   "vim-toml": { "branch": "main", "commit": "d36caa6b1cf508a4df1c691f915572fc02143258" },
   "vimtex": { "branch": "master", "commit": "fcbaf66887bd19f5d973406848cf2a5ac46bd65e" },
   "which-key.nvim": { "branch": "main", "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821" },
